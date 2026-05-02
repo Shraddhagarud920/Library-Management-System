@@ -1,0 +1,157 @@
+/* Keep your existing React defaults */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ========================================= */
+/* ADD THE NEW ATTRACTIVE STYLES BELOW HERE  */
+/* ========================================= */
+
+body {
+  background-color: #f8f9fa; 
+  font-family: 'Inter', -apple-system, sans-serif;
+  margin: 0;
+}
+
+/* Homepage Styles */
+.homepage .bg-dark {
+  background: linear-gradient(135deg, #1a1a1a 0%, #343a40 100%) !important;
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px); 
+}
+
+/* Login Page Styles */
+.login-page-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  align-items: center;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(10px);
+}
+
+.login-icon-circle {
+  width: 80px;
+  height: 80px;
+  background-color: #e7f0ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.login-card input:focus {
+  background-color: #fff !important;
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.1) !important;
+  border-color: #007bff !important;
+}
+/* BookList Styles */
+.booklist-bg {
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+.book-card {
+  border-radius: 15px !important;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-8px);
+  shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.book-cover-placeholder {
+  height: 180px;
+  background: linear-gradient(45deg, #e9ecef, #dee2e6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #eee;
+}
+
+.book-card .card-title {
+  font-size: 1.1rem;
+  color: #2d3436;
+}
+
+.book-card .btn-outline-primary, 
+.book-card .btn-outline-danger {
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 5px 15px;
+}
+.booklist-bg {
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+.book-card {
+  border-radius: 15px !important;
+  transition: all 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.book-cover-placeholder {
+  height: 160px;
+  background: linear-gradient(135deg, #e9ecef 0%, #cfd4da 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #eee;
+}
+
+.book-card .card-title {
+  font-size: 1.15rem;
+  color: #2d3436;
+}
