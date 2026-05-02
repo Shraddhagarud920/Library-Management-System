@@ -1,8 +1,12 @@
 .📚 Digital Book Manager (Full-Stack)A modern, secure web application for managing a personal library. This project demonstrates a complete Full-Stack CRUD cycle with JWT Authentication and a clean, Service-Oriented Frontend Architecture.
+
 🚀 Key FeaturesSecure Authentication: User login and registration using JWT (JSON Web Tokens).Full CRUD Functionality: 
 Create, Read, Update, and Delete books from a central database.Protected Routes: Frontend routes are guarded; only authenticated users can access the library.Global API Service: Centralized Axios configuration with Interceptors for automatic JWT injection.Responsive UI: Fully mobile-friendly interface built with React-Bootstrap.Real-time Search: Instantly filter your collection by book name or author.
+
 🛠️ Tech StackBackendLanguage: Java 17Framework: Spring Boot 3Security: Spring Security & JWTDatabase: MySQLORM: Spring Data JPA (Hibernate)FrontendLibrary: React.jsStyling: React-BootstrapRouting: React Router DOM v6API Client: Axios
+
 🏗️ Architecture Highlight: The Service LayerUnlike basic React apps, this project uses a Service-Oriented Pattern.All API calls are moved to a dedicated services/api.js file.An Axios Interceptor is used to automatically attach the Authorization: Bearer <token> header to every outgoing request.This makes the components cleaner, easier to test, and ready for professional scaling.
+
 ⚙️ Setup & Installation1. PrerequisitesJDK 17 or higherNode.js (v16+)MySQL Server2. Backend SetupCreate a MySQL database: CREATE DATABASE book_db;Navigate to the backend folder.Update src/main/resources/application.properties with your MySQL username and password.Run the application:bashmvn spring-boot:run
 Use code with caution.3. Frontend SetupNavigate to the book-management-app folder.Install dependencies:bashnpm install
 Use code with caution.Start the React app:bashnpm start
