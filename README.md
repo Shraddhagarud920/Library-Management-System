@@ -10,3 +10,5 @@ Create, Read, Update, and Delete books from a central database.Protected Routes:
 ⚙️ Setup & Installation1. PrerequisitesJDK 17 or higherNode.js (v16+)MySQL Server2. Backend SetupCreate a MySQL database: CREATE DATABASE book_db;Navigate to the backend folder.Update src/main/resources/application.properties with your MySQL username and password.Run the application:bashmvn spring-boot:run
 Use code with caution.3. Frontend SetupNavigate to the book-management-app folder.Install dependencies:bashnpm install
 Use code with caution.Start the React app:bashnpm start
+Username:shraddha
+Password:1234
